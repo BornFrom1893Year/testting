@@ -4,7 +4,8 @@ https://crowdin.com/
 相似codespace, test elasticsearch labs
 https://codesandbox.io/
 
-
+LLM Chatbot With Retrieval Augmented Generation (RAG) and DBRX
+https://notebooks.databricks.com/demos/llm-rag-chatbot/index.html#
 
 
 
