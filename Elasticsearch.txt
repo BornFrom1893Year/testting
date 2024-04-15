@@ -1,0 +1,72 @@
+Elasticsearch
+全文检索商務數據處理 倒排索引（Inverted Index）
+Cluster, Node, Shard, Replia <-Elasticsearch核心概念
+
+动态映射和静态映射
+映射与数据类型
+Mapping, dynamic mapping
+
+静态映射数据类型
+字符串类型
+整数类型
+浮点类型
+date类型
+boolean类型
+binary类型
+array类型
+object类型
+
+安装并运行Elasticsearch要求
+https://www.elastic.co/cn/downloads
+Java 版本保持在 1.8 及以上
+Elasticsearch 9200端口
+Kibana可视化操作平台 5601端口 -> Dev Tools工具 -> PUT, POST, DELETE, GET
+
+分词器
+中文IK分词器 -> ik_max_word, ik_smart, 自定义词库
+https://github.com/infinilabs/analysis-ik
+
+索引操作
+PUT
+创建索引与映射字段
+PUT sku/_doc/1
+PUT sku/_mappings
+
+GET
+查看索引字段类型
+GET /sku/_search
+
+POST
+文档增加与修改
+POST sku/_doc/1
+
+DELETE
+删除索引文档
+DELETE sku/_doc/1
+
+Query
+match_all
+match
+term
+range
+处理Null值
+missing 缺失查询
+dis_max 最佳字段
+
+
+elasticsearch最全详细使用教程：入门、索引管理、映射详解、索引别名、分词器、文档管理、路由、搜索详解
+https://blog.csdn.net/ZYC88888/article/details/91463253
+
+
+
+
+
+
+
+
+
+
+
+
+
+
