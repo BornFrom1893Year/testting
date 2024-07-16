@@ -1,0 +1,16 @@
+docker run -d \
+  --name=chromium \
+  --security-opt seccomp=unconfined `#optional` \
+  -e PUID=1000 \
+  -e PGID=1000 \
+  -e TZ=Asia/Hong_Kong \
+  -e CHROME_CLI=https://www.linuxserver.io/ `#optional` \
+  -e DOCKER_MODS=linuxserver/mods:universal-package-install \
+  -e INSTALL_PACKAGES=fonts-noto-cjk \
+  -e LC_ALL=zh_CN.UTF-8 \
+  -p 3000:3000 \
+  -p 3001:3001 \
+  -v /workspaces/testting/docker-chromium/config:/config \
+  --shm-size="1gb" \
+  --restart unless-stopped \
+  lscr.io/linuxserver/chromium:latest
